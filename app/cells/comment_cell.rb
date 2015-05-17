@@ -1,8 +1,10 @@
+require 'action_view'
 require 'cells'
+require 'cells/haml'
 
 class CommentCell < Cell::ViewModel
   def show
-    render
+    render :show
   end
 
   def author_link
